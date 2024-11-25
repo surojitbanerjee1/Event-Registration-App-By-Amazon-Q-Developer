@@ -1,0 +1,20 @@
+Build a single page web app that runs on nodejs and uses a .json file as database. Dont use Python. Use Javascript only. The web app will be used to register attendees to an event.
+ Local Data : Add a data.json file for attendees data, with following data elements : RegistrationID, PhotoID, Name, Department, email, phone. The data file will have the following boolean data elements for every attendee, which will be used to checkin attendees to the different programs : Registration, Breakfast, Lunch, Dinner, Drinks, Swag, Group Photo, Department Photo, Solo Photo. Add data for 2 sample Attendees. Use RegistrationID like REG001, REG002. 
+QR Code Scanner : Attendees will have a QR Code with their RegistrationID. The web app will continuously show what the camera is capturing so that users can see what they are scanning in front of the camera. Once QR code Scanning is successful, hide the QR Code scanning window and load a form with the details of the attendee from the data file. 
+
+Add Feature for Attendee Photo : The WebApp will also take a picture of the attendee if a photo is not taken earlier and updated in the .json data file with the PhotoID. Add a folder to store Photos. Photos will be stored in the Photos folder. Use the Name of the Attendee and the RegistrationID in the name of the Photo which is same as the PhotoID. Video capture window should only show after QR code scanning is done and till Photo is not captured. After taking Photo, Attendee will click on Save Photo Button. If PhotoID is present, display the photo after QR code Scanning along with other data.
+
+Data Update : Attendees can choose to edit details in the form, except the RegistrationID and PhotoID, and press on Update button.  Show RegistrationID & PhotoID as text.  Attendees will press on buttons to register for the different programs listed above. Make these buttons as Touch buttons.   When Program Buttons are touched, auto submit the form to update the data. Store boolean flags for the different Programs and use them to show green or red color Program buttons.  Show a temporary message that says Data Updated. 
+History : Add DateTime of every form submission along with the Changed data. Display this data along with the form in the same page.
+Shows all the event history with the latest event at the top. The list will show DateTime and what was updated.
+
+ReadMe : Add a readme file with all the instructions on how to use this app. Also add information on how this app was created, what are the features, and how to extend the functionality to the readme file. Make sure a person without much technical knowledge can understand and easily install the app to get started.
+
+Review the code to perform the following checks at the end :
+1. HTML and Stylesheet to make sure the webpage looks good and is compact in design.
+2. Video shows from the camera, the QR code scanning works.
+3. Once QR code is scanned the webpage is able to load the data from the .json file and display the registration data
+4. Attendee json data is read properly as it may be an array of attendees.
+5. Event Update history is stored correctly and displayed properly after any change
+6. Video windows shows if Attendee Photo is not taken. 
+7. Photo and Data is saved when updated by user. 
