@@ -1,0 +1,14 @@
+{
+    "name": "event-registration-system",
+    "version": "1.0.0",
+    "description": "Event registration system with QR code scanning and photo capture",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "multer": "^1.4.2",
+        "body-parser": "^1.19.0"
+    }
+}

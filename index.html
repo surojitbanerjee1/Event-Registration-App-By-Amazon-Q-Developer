@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="qr-reader" class="scanner-container"></div>
+        <div id="video-container" style="display: none;">
+            <video id="video" autoplay></video>
+            <button id="capture-photo">Capture Photo</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+        
+        <form id="attendee-form" style="display: none;">
+            <div class="form-group">
+                <label>Registration ID:</label>
+                <span id="registrationId"></span>
+            </div>
+            <div class="form-group">
+                <label>Photo ID:</label>
+                <span id="photoId"></span>
+            </div>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label>Department:</label>
+                <input type="text" id="department" required>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="photo-container">
+                <img id="attendee-photo" style="display: none;">
+            </div>
+            <div class="program-buttons">
+                <button type="button" data-program="Registration">Registration</button>
+                <button type="button" data-program="Breakfast">Breakfast</button>
+                <button type="button" data-program="Lunch">Lunch</button>
+                <button type="button" data-program="Dinner">Dinner</button>
+                <button type="button" data-program="Drinks">Drinks</button>
+                <button type="button" data-program="Swag">Swag</button>
+                <button type="button" data-program="GroupPhoto">Group Photo</button>
+                <button type="button" data-program="DepartmentPhoto">Department Photo</button>
+                <button type="button" data-program="SoloPhoto">Solo Photo</button>
+            </div>
+            <button type="submit" id="update-button">Update Details</button>
+        </form>
+        
+        <div id="message" class="message"></div>
+        <div id="history" class="history">
+            <h3>Update History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
