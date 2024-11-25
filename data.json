@@ -1,0 +1,40 @@
+{
+    "attendees": [
+        {
+            "RegistrationID": "REG001",
+            "PhotoID": "",
+            "Name": "John Doe",
+            "Department": "Engineering",
+            "email": "john.doee@example.com",
+            "phone": "123-456-7890",
+            "Registration": false,
+            "Breakfast": false,
+            "Lunch": false,
+            "Dinner": false,
+            "Drinks": false,
+            "Swag": false,
+            "GroupPhoto": false,
+            "DepartmentPhoto": false,
+            "SoloPhoto": false,
+            "history": []
+        },
+        {
+            "RegistrationID": "REG002",
+            "PhotoID": "",
+            "Name": "Jane Smith",
+            "Department": "Marketing",
+            "email": "jane.smith@example.com",
+            "phone": "098-765-4321",
+            "Registration": false,
+            "Breakfast": false,
+            "Lunch": false,
+            "Dinner": false,
+            "Drinks": false,
+            "Swag": false,
+            "GroupPhoto": false,
+            "DepartmentPhoto": false,
+            "SoloPhoto": false,
+            "history": []
+        }
+    ]
+}
